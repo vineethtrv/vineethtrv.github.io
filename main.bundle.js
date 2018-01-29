@@ -17,10 +17,81 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 
 /***/ }),
 
+/***/ "../../../../../src/app/about/about.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<section id=\"about-me\" *ngIf=\"aboutMe\" >\n  <div class=\"banner\"></div>\n\n  <div class=\"container\">\n    <div class=\"avatar\" >\n      <img [src]=\"aboutMe.better_featured_image.source_url\" alt=\"\">\n    </div>\n    <div class=\"text-container\">\n        <p [innerHtml]=\"aboutMe.content.rendered\"></p>\n    </div>\n  </div>\n\n\n</section>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "#about-me {\n  background: #fff;\n  margin-bottom: 30px; }\n\n.banner {\n  height: 60vh;\n  background: #1488CC;\n  /* fallback for old browsers */\n  /* Chrome 10-25, Safari 5.1-6 */\n  background: -webkit-gradient(linear, left top, right top, from(#2B32B2), to(#1488CC));\n  background: linear-gradient(to right, #2B32B2, #1488CC);\n  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }\n\n.text-container {\n  padding: 15px;\n  position: relative; }\n\n.avatar {\n  width: 200px;\n  height: 200px;\n  display: block;\n  margin: 25px auto;\n  border-radius: 50%;\n  margin-top: -100px;\n  position: relative; }\n\n.avatar img {\n    border: 2px solid #fff;\n    width: 200px;\n    height: 200px;\n    border-radius: 50%; }\n\n.avatar:after {\n    content: '';\n    position: absolute;\n    border: 2px solid #eee;\n    width: 220px;\n    height: 220px;\n    left: 50%;\n    top: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    border-radius: 50%; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/about/about.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wp_service_wp_service_service__ = __webpack_require__("../../../../../src/app/wp-service/wp-service.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutComponent = /** @class */ (function () {
+    function AboutComponent(wpService) {
+        this.wpService = wpService;
+    }
+    AboutComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        // About me
+        this.wpService.aboutMe().subscribe(function (res) {
+            _this.aboutMe = res;
+            console.log(res);
+        });
+    };
+    AboutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'about',
+            template: __webpack_require__("../../../../../src/app/about/about.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/about/about.component.scss")],
+            providers: [__WEBPACK_IMPORTED_MODULE_1__wp_service_wp_service_service__["a" /* WpServiceService */]]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__wp_service_wp_service_service__["a" /* WpServiceService */]])
+    ], AboutComponent);
+    return AboutComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header></header>\n\n<work></work>\n"
+module.exports = "<header></header>\n<about></about>\n<work></work>\n"
 
 /***/ }),
 
@@ -86,6 +157,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__header_header_component__ = __webpack_require__("../../../../../src/app/header/header.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__work_work_component__ = __webpack_require__("../../../../../src/app/work/work.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card_card_component__ = __webpack_require__("../../../../../src/app/card/card.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__about_about_component__ = __webpack_require__("../../../../../src/app/about/about.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -101,6 +173,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -110,7 +183,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_5__header_header_component__["a" /* HeaderComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__work_work_component__["a" /* WorkComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__card_card_component__["a" /* CardComponent */]
+                __WEBPACK_IMPORTED_MODULE_7__card_card_component__["a" /* CardComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__about_about_component__["a" /* AboutComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -230,7 +304,7 @@ var CardComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav id=\"header\">\n  <div class=\"container\">\n      <a href=\"#about\" class=\"brand\">Brand Name</a>\n\n            <ul class=\"nav\" *ngIf=\"navs\">\n              <li  *ngFor=\"let nav of navs\"><a href=\"#{{nav.slug}}\">{{nav.name}}</a></li>\n            </ul>\n\n  </div>\n</nav>\n"
+module.exports = "<nav id=\"header\">\n  <div class=\"container\">\n      <a href=\"#about\" class=\"brand\">Vineeth TR</a>\n\n            <ul class=\"nav\" *ngIf=\"navs\">\n              <li  *ngFor=\"let nav of navs\"><a href=\"#{{nav.slug}}\">{{nav.name.substr(1)}}</a></li>\n            </ul>\n\n  </div>\n</nav>\n"
 
 /***/ }),
 
@@ -242,7 +316,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#header {\n  background: #fff;\n  left: 0;\n  width: 100%;\n  top: 0;\n  text-transform: uppercase;\n  line-height: 1.3;\n  margin-bottom: 15px; }\n  #header a {\n    text-decoration: none; }\n  #header .brand {\n    font-size: 32px;\n    color: #333;\n    display: inline-block;\n    padding: 15px 0; }\n  #header .nav {\n    float: right;\n    list-style: none;\n    margin: 0; }\n  #header .nav li {\n      float: left; }\n  #header .nav li a {\n        color: #333;\n        display: block;\n        font-size: 16px;\n        padding: 25px 12px; }\n", ""]);
+exports.push([module.i, "#header {\n  background: #fff;\n  left: 0;\n  width: 100%;\n  top: 0;\n  text-transform: uppercase;\n  line-height: 1.3; }\n  #header a {\n    text-decoration: none; }\n  #header .brand {\n    font-size: 32px;\n    color: #333;\n    display: inline-block;\n    padding: 15px 0; }\n  #header .nav {\n    float: right;\n    list-style: none;\n    margin: 0; }\n  #header .nav li {\n      float: left; }\n  #header .nav li a {\n        color: #333;\n        display: block;\n        font-size: 16px;\n        padding: 25px 12px; }\n", ""]);
 
 // exports
 
@@ -300,7 +374,7 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/work/work.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\" *ngIf=\"catInfo\">\n\n<div *ngFor=\"let cat of catInfo\">\n  <section [id]='cat.slug'  *ngIf=\"cat.count > 0; else falsyTemplate\">\n\n    <!-- Section Title -->\n    <h3 class=\"page-header\">{{cat.name}}</h3>\n    <!-- Works -->\n    <card [postCount]=\"cat.count\" [catId]=\"cat.id\"></card>\n  </section>\n\n  <ng-template #falsyTemplate></ng-template>\n\n</div>\n</div>\n"
+module.exports = "<div class=\"container\" *ngIf=\"catInfo\">\n\n<div *ngFor=\"let cat of catInfo\">\n  <section [id]='cat.slug'  *ngIf=\"cat.count > 0; else falsyTemplate\">\n\n    <!-- Section Title -->\n    <h3 class=\"page-header\">{{cat.name.substr(1)}}</h3>\n    <!-- Works -->\n    <card [postCount]=\"cat.count\" [catId]=\"cat.id\"></card>\n  </section>\n\n  <ng-template #falsyTemplate></ng-template>\n\n</div>\n</div>\n"
 
 /***/ }),
 
@@ -405,6 +479,14 @@ var WpServiceService = /** @class */ (function () {
         return this.http.get(url).map(function (res) {
             var categories = res.json();
             return categories;
+        });
+    };
+    // About me
+    WpServiceService.prototype.aboutMe = function () {
+        var url = 'https://vineethtr.000webhostapp.com/wp-json/wp/v2/pages/323';
+        return this.http.get(url).map(function (res) {
+            var aboutMe = res.json();
+            return aboutMe;
         });
     };
     WpServiceService = __decorate([
