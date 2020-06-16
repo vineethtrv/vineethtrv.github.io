@@ -1,0 +1,196 @@
+
+
+.banner  .bannner-wrapper{
+    width: 4350px;
+    padding-top: 20px;
+    position: relative;
+    opacity: 0;
+    transition: 0.3s linear;
+            animation-duration: 60s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-name: move;
+            animation-timing-function: linear; }
+
+.scl{
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  margin: 3vw 10vw;
+  display: inline-block;
+  background: #fff url('../images/sprite.png') no-repeat;
+    box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+    animation: 5s vmove infinite alternate; 
+}
+
+.scl:nth-child(2n + 2) {
+    transform: scale(1.3);
+    margin: 4vw 8vw;
+    animation-duration: 20s; 
+}
+
+.scl:nth-child(2n + 4) {
+    transform: scale(0.8);
+    margin: 2vw 3vw;
+    animation-duration: 10s; 
+}
+
+.scl:nth-child(2n + 5) {
+    animation-duration: 3s; 
+}
+
+.scl:nth-child(3n + 5) {
+    transform: scale(1.1);
+    margin: 4vw;
+     animation-duration: 7s; 
+}
+
+.ai{
+  background-position: -40px -40px; }
+
+.ng{
+  background-position: -114px -40px; }
+
+.android{
+  background-position: -188px -40px; }
+
+.coffe{
+  background-position: -262px -40px; }
+
+.enyo{
+  background-position: -336px -40px; }
+
+.react{
+  background-position: -410px -40px; }
+
+.js{
+  background-position: -558px -40px; }
+
+.node{
+  background-position: -632px -40px; }
+
+.opera{
+  background-position: -706px -40px; }
+
+.pug{
+  background-position: -780px -40px; }
+
+.cordova{
+  background-position: -854px -40px; }
+
+.ts{
+  background-position: -928px -40px; }
+
+.bb{
+  background-position: -188px -114px; }
+
+.ios{
+  background-position: -262px -114px; }
+
+.css{
+  background-position: -336px -114px; }
+
+.hb{
+  background-position: -410px -114px; }
+
+.in{
+  background-position: -484px -114px; }
+
+.less{
+  background-position: -558px  -114px; }
+
+.safari{
+  background-position: -632px -114px; }
+
+.grunt{
+  background-position: -706px -114px; }
+
+.pcss{
+  background-position: -780px -114px; }
+
+.ws{
+  background-position: -854px -114px; }
+
+.ff{
+  background-position: -928px -114px; }
+
+.bower{
+  background-position: -40px -188px; }
+
+.bs{
+  background-position: -114px -188px; }
+
+.cp{
+  background-position: -188px -188px; }
+
+.fa{
+  background-position: -336px -188px; }
+
+.html{
+  background-position: -410px -188px; }
+
+.jm{
+  background-position: -484px -188px; }
+
+.st{
+  background-position: -558px -188px; }
+
+.sass{
+  background-position: -706px -188px; }
+
+.mi{
+  background-position: -780px -188px; }
+
+.yom{
+  background-position: -854px -188px; }
+
+.ac{
+  background-position: -40px -262px; }
+
+.ws{
+  background-position: -114px -262px; }
+
+.edge{
+  background-position: -188px -262px; }
+
+.ff{
+  background-position: -262px -262px; }
+
+.fs{
+  background-position: -336px -262px; }
+
+.git{
+  background-position: -410px -262px; }
+
+.ionic{
+  background-position: -484px -262px; }
+
+.md{
+  background-position: -558px -262px; }
+
+.php{
+  background-position: -632px -262px; }
+
+.ps{
+  background-position: -706px -262px; }
+
+.wos{
+  background-position: -854px -262px; }
+
+
+@keyframes vmove {
+  0% { top: -20px; }
+  100% { top: 20px; } 
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+    opacity: 1; }
+  100% {
+    transform: translateX(-70%);
+    opacity: 1; 
+    } 
+}
+
