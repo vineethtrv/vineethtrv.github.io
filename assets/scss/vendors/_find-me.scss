@@ -1,0 +1,113 @@
+// main: ../styles.scss
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?v8tpr3');
+    src:  url('../fonts/icomoon.eot?v8tpr3#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?v8tpr3') format('truetype'),
+      url('../fonts/icomoon.woff?v8tpr3') format('woff'),
+      url('../fonts/icomoon.svg?v8tpr3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-codepen:before {
+    content: "\e900";
+  }
+  .icon-facebook:before {
+    content: "\e901";
+    color: #1877f2;
+  }
+  .icon-github:before {
+    content: "\e902";
+  }
+  .icon-gmail:before {
+    content: "\e903";
+    color: #d14836;
+  }
+  .icon-instagram:before {
+    content: "\e904";
+    color: #e4405f;
+  }
+  .icon-linkedin:before {
+    content: "\e907";
+    color: #0077b5;
+  }
+  .icon-twitter:before {
+    content: "\e905";
+    color: #1da1f2;
+  }
+  .icon-youtube:before {
+    content: "\e906";
+    color: #f00;
+  }
+  
+
+#findMe {
+    height: 100vh;
+    position: relative;
+    background: #000;
+    background: var(--prime);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.icon {
+    width: 7vw;
+    height: 7vw;
+    display: inline-block;
+    margin: 0 2vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    &:before {
+        color:  var(--prime);
+    }
+}
+
+.pointer {
+    width: 12vw;
+    height: 12vw;
+    background: #fff;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+   transition: 0s;
+   color:  var(--prime) ;
+   cursor: none;
+   box-shadow: 0 0 3vw inset ,  0 0 2vw inset,  0 0 2vw inset;
+   &::after{
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 13vw;
+      height: 13vw;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      border: 1vw solid;
+  }
+}

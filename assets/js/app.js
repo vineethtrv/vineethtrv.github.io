@@ -47,7 +47,8 @@ $(document).ready(function(){
                 `);
             });
 
-    })
+    });
+
 
     // sticky nav
     $(window).on('scroll', function(e){
@@ -112,5 +113,21 @@ $(document).ready(function(){
         $('#header').toggleClass('open');
     });
 
+
+
+
+
+    // Find me
+    $('#nav').append(`<a class="nav-link fr" href="#findMe">Find Me</a>`);
+
+    $('#findMe').mousemove(function(e){
+        const pointer = $('.pointer');
+        const x = e.clientX - (pointer.width()/2);
+        const y = e.clientY - (pointer.height()/2);
+
+        pointer.css({
+            transform: `translate(${x}px, ${y}px)`
+        })
+    })
 });
 
