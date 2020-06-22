@@ -1,0 +1,54 @@
+// main: ../styles.scss
+
+#aboutMe{
+    margin-bottom: 30px;
+    position: relative;
+    user-select: none;
+}
+
+
+
+.discribe{
+    margin-top: -100px;
+    position: relative;
+    padding: 0  15px;
+
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    overflow: hidden;
+    margin: auto;
+    z-index: 50;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    user-select: none;
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.text-container{
+    margin:15px auto 0;
+    max-width: 75%;
+    padding: 20px;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    &:after{
+        content: '';
+        position: absolute;
+        border: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        left: 50%;
+        bottom: 100%;
+        transform: translateX(-50%);
+    }
+}
+

@@ -1,0 +1,95 @@
+// main: ../styles.scss
+
+
+#portfolio{
+    color: #fff;
+     background: var(--second);
+    section{
+        padding: 20px;
+        min-height: 100vh;
+    }
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.grid {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 15px;
+
+    @media (max-width: 768px) { 
+        flex: 0 0 50%;
+        max-width: 50%; 
+     }
+    @media (max-width: 640px) { 
+        flex: 0 0 100%;
+        max-width: 100%; 
+     }
+}
+.card{
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) , 0 0 20px rgba(0, 0, 0, 0.2);
+    display: block;
+    color: #444;
+    background: #fff;
+    overflow: hidden;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transform: scale(1);
+        opacity: 0;
+        transition: 0.4s ease-in;
+        background: var(--second);
+        z-index: 1;
+    }
+    * {
+        transition: none;
+    }
+    &:hover{
+        color: #333;
+        box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+        transform: scale(1.03);
+        &::after{
+            transform: scale(100);
+            opacity: 0.1;
+        }
+    }
+    .card-media{
+        border-radius: 8px 8px 0 0;
+        padding-top: 60%;
+        margin: 0;
+        background-color: #eee;
+        background-size: cover;
+        background-position: center;
+        margin: 0 ;
+        position: relative;
+        z-index: 2;
+    }
+
+    .card-body{
+        padding: 20px;
+        position: relative;
+       z-index: 3;
+    }
+
+    .title{
+        margin: 0 0 10px;
+        font-size: 20px;
+        line-height: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    article {
+        font-size: 14px;
+    }
+
+}

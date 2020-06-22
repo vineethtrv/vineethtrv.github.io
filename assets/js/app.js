@@ -107,5 +107,10 @@ $(document).ready(function(){
     })
 
 
+    // Toggle Menu
+    $('.menu-toogle').click(function(){
+        $('#header').toggleClass('open');
+    });
+
 });
 

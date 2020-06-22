@@ -1,16 +1,35 @@
+// main: ../styles.scss
 
 
-.banner  .bannner-wrapper{
+.banner{
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  user-select: none;
+  background: rgb(25,173,175);
+  background: var(--prime);
+  background: linear-gradient(145deg, rgba(25,173,175,1) 0%, rgba(30,186,126,1) 100%); 
+  background: linear-gradient(145deg, var(--prime) 0%, var(--second) 100%); 
+  @media (max-width: 1023px) {
+      height: 300px;
+  }
+  .bannner-wrapper{
     width: 4350px;
     padding-top: 20px;
     position: relative;
     opacity: 0;
     transition: 0.3s linear;
-            animation-duration: 60s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: infinite;
-            animation-name: move;
-            animation-timing-function: linear; }
+    animation-duration: 60s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: move;
+    animation-timing-function: linear; 
+    @media (max-width: 640px) { 
+      padding-top: 100px;
+    }
+  }
+}
+
 
 .scl{
   border-radius: 50%;
