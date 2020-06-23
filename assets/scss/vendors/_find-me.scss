@@ -32,30 +32,24 @@
   }
   .icon-facebook:before {
     content: "\e901";
-    color: #1877f2;
   }
   .icon-github:before {
     content: "\e902";
   }
   .icon-gmail:before {
     content: "\e903";
-    color: #d14836;
   }
   .icon-instagram:before {
     content: "\e904";
-    color: #e4405f;
   }
   .icon-linkedin:before {
     content: "\e907";
-    color: #0077b5;
   }
   .icon-twitter:before {
     content: "\e905";
-    color: #1da1f2;
   }
   .icon-youtube:before {
     content: "\e906";
-    color: #f00;
   }
   
 
@@ -70,10 +64,8 @@
     overflow: hidden;
 }
 .icon {
-    width: 7vw;
-    height: 7vw;
     display: inline-block;
-    margin: 0 2vw;
+    margin: 0 3vw;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -83,29 +75,58 @@
     cursor: pointer;
     &:before {
         color:  var(--prime);
+        transition: 0s;
+    }
+    &:hover {
+      
+      &.icon-codepen:before {
+        color: #000;
+      }
+      &.icon-facebook:before {
+        color: #1877f2;
+      }
+      &.icon-github:before {
+        color: #000;
+      }
+      &.icon-gmail:before {
+        color: #d14836;
+      }
+      &.icon-instagram:before {
+        color: #e4405f;
+      }
+      &.icon-linkedin:before {
+        color: #0077b5;
+      }
+      &.icon-twitter:before {
+        color: #1da1f2;
+      }
+      &.icon-youtube:before {
+        color: #f00;
+      }
     }
 }
 
 .pointer {
-    width: 12vw;
-    height: 12vw;
-    background: #fff;
-    z-index: 10;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 50%;
-   transition: 0s;
-   color:  var(--prime) ;
-   cursor: none;
-   box-shadow: 0 0 3vw inset ,  0 0 2vw inset,  0 0 2vw inset;
+  width: 14vw;
+  height: 14vw;
+  background: #fff;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0s;
+  color:  var(--prime) ;
+  cursor: none;
+  box-shadow: 0 0 3vw inset ,  0 0 2vw inset,  0 0 2vw inset;
    &::after{
       content: '';
       position: absolute;
       left: 50%;
       top: 50%;
-      width: 13vw;
-      height: 13vw;
+      width: 15vw;
+      height: 15vw;
       border-radius: 50%;
       transform: translate(-50%, -50%);
       border: 1vw solid;
