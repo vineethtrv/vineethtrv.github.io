@@ -121,9 +121,7 @@ $(document).ready(function(){
     $('#nav').append(`<a class="nav-link fr" href="#findMe">Find Me</a>`);
 
     $('#findMe').mousemove(function(e){
-        console.log(e);
         const pointer = $('.pointer');
-        
         const x = e.clientX - (pointer.width()/2);
         const y = (e.pageY - e.currentTarget.offsetTop) - (pointer.height()/2);
         pointer.css({
@@ -136,5 +134,10 @@ $(document).ready(function(){
     $('#findMe').mouseover(function(){
         $('.pointer').css('opacity', 1)
     })
+
+
+   
+
+    
 });
 

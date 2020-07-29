@@ -56,12 +56,13 @@
 #findMe {
     height: 100vh;
     position: relative;
-    background: #000;
     background: var(--prime);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: 0s;
+    user-select: none;
 }
 .icon {
     display: inline-block;
@@ -107,8 +108,8 @@
 }
 
 .pointer {
-  width: 14vw;
-  height: 14vw;
+  width: 12vw;
+  height: 12vw;
   background: #fff;
   z-index: 10;
   position: absolute;
@@ -119,16 +120,5 @@
   transition: 0s;
   color:  var(--prime) ;
   cursor: none;
-  box-shadow: 0 0 3vw inset ,  0 0 2vw inset,  0 0 2vw inset;
-   &::after{
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 15vw;
-      height: 15vw;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      border: 1vw solid;
-  }
+  filter: blur(6px);
 }

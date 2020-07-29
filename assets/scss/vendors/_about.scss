@@ -33,19 +33,25 @@
 }
 
 .text-container{
-    margin:15px auto 0;
-    max-width: 75%;
-    padding: 20px;
+    margin: 15px auto 0;
+    max-width: 480px;
+    padding: 5px 20px;
     position: relative;
-    background: #fff;
+    background: #222;
     border-radius: 4px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-    font-size: 16px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.15);
+    font-size: 22px;
+    white-space: pre;
+    color: #fff;
+    line-height: 32px;
+    .red {
+        color: #F44336;
+    }
     &:after{
         content: '';
         position: absolute;
         border: 10px solid transparent;
-        border-bottom: 10px solid #fff;
+        border-bottom: 10px solid #222;
         left: 50%;
         bottom: 100%;
         transform: translateX(-50%);
