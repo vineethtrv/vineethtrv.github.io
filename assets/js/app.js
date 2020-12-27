@@ -31,7 +31,6 @@ $(document).ready(function(){
                  <div class= "flex-container"></div>
             </section>`)
             domain.data.forEach(item => {
-                console.log(item.image)
                 $(`#${domain.id} .flex-container`).append(`
                     <div class="grid">
                         <a href="${item.url}" target="_blank" class="card">
@@ -93,7 +92,7 @@ $(document).ready(function(){
 
     // Theme switch
     function changeTheme () {
-        let i = Math.floor(Math.random() * 10);
+        let i = Math.floor(Math.random() * themes.length);
         $(':root').css({
             '--text': themes[i].text,
             '--prime': themes[i].prime,

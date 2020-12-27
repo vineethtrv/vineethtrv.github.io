@@ -4,6 +4,8 @@
     margin-bottom: 30px;
     position: relative;
     user-select: none;
+    background: rgba(#fff, 0.5);
+    padding-bottom: 30px;
 }
 
 
@@ -34,24 +36,22 @@
 
 .text-container{
     margin: 15px auto 0;
-    max-width: 480px;
-    padding: 5px 20px;
+    max-width: 740px;
+    padding:  20px;
     position: relative;
-    background: #222;
+    background: #fff; 
+
     border-radius: 4px;
     box-shadow: 0 10px 10px rgba(0,0,0,.15);
     font-size: 22px;
-    white-space: pre;
-    color: #fff;
+    color: #222;
     line-height: 32px;
-    .red {
-        color: #F44336;
-    }
+    
     &:after{
         content: '';
         position: absolute;
         border: 10px solid transparent;
-        border-bottom: 10px solid #222;
+        border-bottom: 10px solid #fff;
         left: 50%;
         bottom: 100%;
         transform: translateX(-50%);

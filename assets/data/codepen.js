@@ -44,6 +44,5 @@ export const codepen = {
                 url: getUrl('ZbKLmq'),
                 details: 'Page not found in pure css3 '
             }
-          
         ]
 };

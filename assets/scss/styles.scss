@@ -9,6 +9,17 @@
   --prime: #19adaf;
   --second: #1eba7e;
   --bodybg: #f3fffa;
+  font-size: 24px;
+
+  @media( min-width: 1400px) {
+      font-size: 36px;
+  }
+  @media( max-width: 1024px) {
+      font-size: 18px;
+  }
+  @media( max-width: 640px) {
+      font-size: 14px;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -34,7 +45,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background: #f5f5f5;
-    background: var(--prime);
+    background: var(--bodybg);
     color: #444;
     color: var(--text);
 }

@@ -3,12 +3,19 @@
 
 #portfolio{
     color: #fff;
-     background: var(--second);
+    background: var(--bodybg);
     section{
         padding: 20px;
         min-height: 100vh;
     }
 }
+
+.section-title {
+    color: var(--prime);
+    text-align: center;
+    font-size: 2rem;
+}
+
 .flex-container{
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +65,7 @@
         box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
         transform: scale(1.03);
         &::after{
-            transform: scale(100);
+            transform: scale(150);
             opacity: 0.1;
         }
     }

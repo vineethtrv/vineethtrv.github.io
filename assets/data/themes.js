@@ -3,31 +3,25 @@ export const themes = [
         text: '#444',
         prime: '#19adaf',
         second: `#1eba7e`,
-        bodybg: '#f3fffa'
+        bodybg: '#d6f4f5'
     },
     {
         text: '#444',
         prime: '#2196F3',
         second: `#00BCD4`,
-        bodybg: '#e2fcff'
+        bodybg: '#d7ebfb'
     },
     {
         text: '#444',
         prime: '#FF5722',
         second: `#FF9800`,
-        bodybg: '#fff5f2'
-    },
-    {
-        text: '#444',
-        prime: '#FF5722',
-        second: `#FF9800`,
-        bodybg: '#fff7f5'
+        bodybg: '#fff8f6'
     },
     {
         text: '#444',
         prime: '#9C27B0',
         second: `#1eba7e`,
-        bodybg: '#f6fff6'
+        bodybg: '#ecdfef'
     },
     {
         text: '#444',
@@ -39,13 +33,13 @@ export const themes = [
         text: '#444',
         prime: '#fd746c',
         second: `#ff9068`,
-        bodybg: '#fff7f7'
+        bodybg: '#f5e9e8'
     },
     {
         text: '#444',
         prime: '#99ce60',
         second: `#64b3f4`,
-        bodybg: '#fff7f7'
+        bodybg: '#deeccf'
     },
     {
         text: '#444',
