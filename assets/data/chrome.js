@@ -3,6 +3,17 @@ export const chromeExtensions = {
     id: 'chromeExtensions',
             data: [
                 {
+                    name:   'Web Editor',
+                    image:  'https://lh3.googleusercontent.com/2vcrcpF3kUfpM-J9aoCdVyNDoglClV7UTYCrBl48G8qiBCPlzaJ-7dM-cXU18vu1q1okFdiuUlTE7x89wa2nUtV1tAk=w640-h400-e365-rj-sc0x00ffffff',
+                    url:    'https://chrome.google.com/webstore/detail/web-editor/pdmlhckofhkhebmcplblcijijgjiakcm',
+                    details: `Forget about all the Code chaos and Customize your website in a handy way
+                                Customize your website, Create your designs.
+                                Forget about all the chaos and design your website with your imaginations, in a handy way.
+                                The web editor is the tool that provides you with an enhanced way to inspect any website elements, alter their properties, 
+                                insert contents, design, and visualize the way you want to see them. 
+                                You don’t need to hold a bunch of technical knowledge. Instead, this tool will do the job for you`
+                },
+                {
                     name:   'Url Scanner',
                     image:  'https://lh3.googleusercontent.com/-2vzLnVdjGkU-5poyVlgHLoOctQN7kiI8I40dOo3nmNU2DgqyfnOrY8M0IK3GLb8lI6Ig01Ev3g=w640-h400-e365',
                     url:    'https://chrome.google.com/webstore/detail/url-scanner/binplchlokfjknlnakmhdmflkjncfpad',
