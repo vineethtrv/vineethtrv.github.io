@@ -91,6 +91,7 @@
     font-size: 36px;
     margin: 30px;
     color: #fff;
+
     @media(min-width: 1025px) {
       margin: 0 3vw;
       font-size: 5vw;
@@ -128,18 +129,21 @@
     }
 }
 
-.pointer {
-  width: 12vw;
-  height: 12vw;
-  background: #fff;
-  z-index: 10;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  opacity: 0;
-  transition: 0s;
-  color:  var(--prime) ;
-  cursor: none;
-  filter: blur(6px);
+@media (min-width:480px){
+  
+  .pointer {
+    width: 12vw;
+    height: 12vw;
+    background: #fff;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0s;
+    color:  var(--prime) ;
+    cursor: none;
+    filter: blur(6px);
+  }
 }

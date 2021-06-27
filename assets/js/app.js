@@ -15,6 +15,7 @@ $(document).ready(function(){
     });
 
 
+
     // build portfolio
     portfolio.forEach(domain => {
 
@@ -47,7 +48,8 @@ $(document).ready(function(){
             });
 
     });
-
+    // Find me Nav link
+    $('#nav').append(`<a class="nav-link fr" href="#findMe">Find Me</a>`);
 
     // sticky nav
     $(window).on('scroll', function(e){
@@ -69,6 +71,7 @@ $(document).ready(function(){
         const spyPanel = $(this).attr('href');
         const spyPanelY = $(spyPanel).position().top;
         $('html , body').animate({ scrollTop: (spyPanelY - 60)}, 600);
+        $('#header').removeClass('open');
     })
 
     // Scroll Spy
@@ -117,8 +120,6 @@ $(document).ready(function(){
 
 
     // Find me
-    $('#nav').append(`<a class="nav-link fr" href="#findMe">Find Me</a>`);
-
     $('#findMe').mousemove(function(e){
         const pointer = $('.pointer');
         const x = e.clientX - (pointer.width()/2);
