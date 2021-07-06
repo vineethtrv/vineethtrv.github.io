@@ -1,12 +1,18 @@
 export const web = {
-    name: 'Web',
-    id: 'web',
+    name: 'Application',
+    id: 'app',
     data: [
         {
             name: 'Vaccine Bell',
             image: 'https://vaccinebell.in/assets/images/vaccinebell-seo.png',
             url: 'https://vaccinebell.in/',
             details: "Get yourself 🔔 notified about the vaccine availability near you. Using Vaccine Bell, Select your nearest hospital or center and get the latest updates on vaccine availability through Browser Alert, email or WhatsApp"
+        },
+        {
+            name: 'Add-to-WhatsApp',
+            image: 'https://vineethtrv.github.io/Add-to-WhatsApp/images/seo.png',
+            url: 'https://vineethtrv.github.io/Add-to-WhatsApp/',
+            details: "WhatsApp is the most popular messaging application for everyone. However, the users do face a huge problem when they are trying to text an unknown person without necessarily having to save the number. Add-to-WhatsApp is small PWA app will help user to send whatsApp message without saving unknown number"
         },
         {
             name: 'CSS3 Loader & Spinners',
