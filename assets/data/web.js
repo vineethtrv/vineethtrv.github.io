@@ -4,7 +4,7 @@ export const web = {
     data: [
         {
             name: 'Vaccine Bell',
-            image: 'https://vaccinebell.in/assets/images/vaccinebell-seo.png',
+            image: './assets/images/vaccinebell-seo.png',
             url: 'https://vaccinebell.in/',
             details: "Get yourself 🔔 notified about the vaccine availability near you. Using Vaccine Bell, Select your nearest hospital or center and get the latest updates on vaccine availability through Browser Alert, email or WhatsApp"
         },
@@ -15,9 +15,9 @@ export const web = {
             details: "WhatsApp is the most popular messaging application for everyone. However, the users do face a huge problem when they are trying to text an unknown person without necessarily having to save the number. Add-to-WhatsApp is small PWA app will help user to send whatsApp message without saving unknown number"
         },
         {
-            name: 'CSS3 Loaders & Spinners',
+            name: 'CSS Loaders & Spinners',
             image: './assets/images/Loader-screen.png',
-            url: 'https://css3loaders.github.io',
+            url: 'https://cssloaders.github.io/',
             details: "A usual situation that we all might face while going through websites is to wait for some progress or something to get loaded. A most common solution in such scenarios is to use a loader,spinner to indicate users  This is a library having a collection of such loaders,spinners . There is no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too"
         },
         {
