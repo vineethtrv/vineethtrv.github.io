@@ -13,7 +13,7 @@ export const web = {
             name: 'Wordle Helper',
             image: './assets/images/wordle-helper.png',
             url: 'https://vineethtrv.github.io/wordle-helper/',
-            details: "Wordle Helper will help you to find the wordle puzzle answer with word suggestions"
+            details: "Wordle Helper will help players gain an advantage to find the wordle puzzle answer with word suggestions. The word list contains all the possible words that can be answers to the Wordle puzzles. The word list can filter by entering information from Wordle about which letters are correct and incorrect."
         },
         
         {
