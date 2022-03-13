@@ -11,7 +11,7 @@ export const web = {
         
          {
             name: 'Wordle Helper',
-            image: 'https://vineethtrv.github.io/wordle-helper/images/wordle-helper.jpg',
+            image: './assets/images/wordle-helper.png',
             url: 'https://vineethtrv.github.io/wordle-helper/',
             details: "Wordle Helper will help you to find the wordle puzzle answer with word suggestions"
         },
