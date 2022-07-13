@@ -23,6 +23,13 @@ export const web = {
             details: "WhatsApp is the most popular messaging application for everyone. However, the users do face a huge problem when they are trying to text an unknown person without necessarily having to save the number. Add-to-WhatsApp is small PWA app will help user to send whatsApp message without saving unknown number"
         },
 
+          {
+            name: 'Types Generator',
+            image: 'https://vineethtrv.github.io/typesgenerator/TypesGenerator.png',
+            url: 'https://vineethtrv.github.io/typesgenerator/',
+            details: "Types generator will help users to create TS types from JSON. Just paste your single object JSON, the Types generator will auto-generate the interfaces for you."
+          },
+
         {
             name: 'Vaccine Bell',
             image: './assets/images/vaccinebell-seo.png',
