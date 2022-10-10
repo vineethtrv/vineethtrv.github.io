@@ -3,17 +3,19 @@ export const web = {
     id: 'app',
     data: [
                 
-         {
-            name: 'Wordle Helper',
-            image: './assets/images/wordle-helper.png',
-            url: 'https://vineethtrv.github.io/wordle-helper/',
-            details: "Wordle Helper will help players gain an advantage to find the wordle puzzle answer with word suggestions. The word list contains all the possible words that can be answers to the Wordle puzzles. The word list can filter by entering information from Wordle about which letters are correct and incorrect."
-        },
+        
         {
             name: 'CSS Loaders & Spinners',
             image: './assets/images/Loader-screen.png',
             url: 'https://cssloaders.github.io/',
             details: "A usual situation that we all might face while going through websites is to wait for some progress or something to get loaded. A most common solution in such scenarios is to use a loader,spinner to indicate users  This is a library having a collection of such loaders,spinners . There is no image dependencies in this. It's is done using pure CSS. Hence it is easily customization too"
+        },
+        
+         {
+            name: 'CSS Toggle Switches',
+            image: 'https://csstoggles.github.io/assets/images/css-toggle.png',
+            url: 'https://csstoggles.github.io/',
+            details: "Collection of different types of CSS Toggles Switches and their source code"
         },
         
         {
@@ -29,7 +31,12 @@ export const web = {
             url: 'https://vineethtrv.github.io/typesgenerator/',
             details: "Types generator will help users to create TS types from JSON. Just paste your single object JSON, the Types generator will auto-generate the interfaces for you."
           },
-
+          {
+            name: 'Wordle Helper',
+            image: './assets/images/wordle-helper.png',
+            url: 'https://vineethtrv.github.io/wordle-helper/',
+            details: "Wordle Helper will help players gain an advantage to find the wordle puzzle answer with word suggestions. The word list contains all the possible words that can be answers to the Wordle puzzles. The word list can filter by entering information from Wordle about which letters are correct and incorrect."
+        },
         {
             name: 'Vaccine Bell',
             image: './assets/images/vaccinebell-seo.png',
