@@ -4,9 +4,9 @@ export const chromeExtensions = {
             data: [
                {
                     name:   'Tab Notes',
-                    image:  'https://lh3.googleusercontent.com/7TH0hFMGy7SPZJU0XJ-ojYtTBHvYNfYjy-crjvxQR10EEhBGb7UdWUTixD6JKneQQ5oxJg4IWxuGq0yK2XTKYZS_yA=w316-h200-rw',
-                    url:    '',
-                    details: `Tab Notes will helps you to make notes on the browser. It is quick and easy to use, even if you are browsing also. 
+                    image:  'https://raw.githubusercontent.com/vineethtrv/vineethtrv.github.io/master/assets/images/TabNotes.png',
+                    url:    'https://chrome.google.com/webstore/detail/tab-notes/fiinodkfgdoljchgmojlnfijgmkmaiel',
+                    details: `Tab Notes will help users to make notes on the browser. It is quick and easy to use, even if you are browsing also. 
                                 In Tab Notes, you can compose notes like articles with a variety of typography styles. 
                                 You can also draw shapes to accompany your notes. Each new tab will automatically save and sync all notes. 
                                 Tab Notes offers you a wide variety of built-in themes. 
