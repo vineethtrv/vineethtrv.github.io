@@ -7,9 +7,9 @@ $(document).ready(function(){
 
     // set banner
     const media = ["ng", "android", "coffe", "enyo", "react", "js", "node", "opera", "pug", "cordova", "ts", "bb", "ios", "css", "hb", "in", "less", "safari", "grunt", "pcss", "ws", "ff", "bower", "bs", "cp", "fa", "html", "jm", "st", "sass", "mi", "yom", "ac", "ws", "edge", "ff", "fs", "git", "ionic", "md", "php", "ps", "wos"]
-    $('#aboutMe').prepend(`<div class="banner"><div class="bannner-wrapper"></div></div>`);
+    $('#aboutMe').prepend(`<div class="banner"><div class="banner-wrapper"></div></div>`);
     media.forEach((item)=> {
-        $('.bannner-wrapper').append(`
+        $('.banner-wrapper').append(`
             <div class="scl ${item}"></div>
         `)
     });
