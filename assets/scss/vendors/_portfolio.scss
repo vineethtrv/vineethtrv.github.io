@@ -3,7 +3,7 @@
 
 #portfolio{
     color: #fff;
-    background: var(--bodybg);
+    background: var(--body-bg);
     section{
         padding: 20px;
         min-height: 100vh;
@@ -14,6 +14,7 @@
     color: var(--prime);
     text-align: center;
     font-size: 2rem;
+    user-select: none;
 }
 
 .flex-container{
@@ -69,6 +70,10 @@
             opacity: 0.1;
         }
     }
+    .preview-card {
+        padding-top: 56.25%;
+        position: relative;
+    }
     .card-media{
         border-radius: 8px 8px 0 0;
         padding-top: 60%;
@@ -79,6 +84,17 @@
         margin: 0 ;
         position: relative;
         z-index: 2;
+    }
+
+    .iframe {
+        width: calc(200% + 5px);
+        height: calc(200% + 5px);
+        border: 0;
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        transform: scale(.5);
+        transform-origin: top left;
     }
 
     .card-body{

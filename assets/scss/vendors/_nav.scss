@@ -88,7 +88,7 @@ $navCollapse: 1023px;
                 }
 
 
-            .menu-toogle {
+            .menu-toggle {
                 &::after {
                     transform: rotate(-45deg);
                 }
@@ -102,7 +102,7 @@ $navCollapse: 1023px;
 
     }
 }
-.menu-toogle {
+.menu-toggle {
     display: none;
     @media (max-width: $navCollapse) { 
         display: inline-block;

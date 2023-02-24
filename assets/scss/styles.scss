@@ -8,7 +8,7 @@
   --text: #444;
   --prime: #19adaf;
   --second: #1eba7e;
-  --bodybg: #f3fffa;
+  --body-bg: #f3fffa;
   font-size: 24px;
 
   @media( min-width: 1400px) {
@@ -35,7 +35,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #fff; 
-    background: var(--bodybg); 
+    background: var(--body-bg); 
     opacity: 0.8;
 }
 
@@ -45,9 +45,10 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background: #f5f5f5;
-    background: var(--bodybg);
+    background: var(--body-bg);
     color: #444;
     color: var(--text);
+    user-select: none;
 }
 
 a{
@@ -69,10 +70,8 @@ a{
 }
 
 
-@import './vendors/nav';
-@import './vendors/banner';
-@import './vendors/about';
-@import './vendors/portfolio';
-@import './vendors/find-me';
-
-
+@import './vendors/_nav.scss';
+@import './vendors/_banner.scss';
+@import './vendors/_about.scss';
+@import './vendors/_portfolio.scss';
+@import './vendors/_find-me.scss';

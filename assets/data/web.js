@@ -42,12 +42,6 @@ export const web = {
             image: './assets/images/vaccinebell-seo.png',
             url: 'https://vaccinebell.in/',
             details: "Get yourself 🔔 notified about the vaccine availability near you. Using Vaccine Bell, Select your nearest hospital or center and get the latest updates on vaccine availability through Browser Alert, email or WhatsApp"
-        },
-        {
-            name: 'HTML Icons',
-            image: './assets/images/html-icons.png',
-            url: 'https://vineethtrv.github.io/html-icons/',
-            details: 'HTML Icons is a collection of UTF-8 Symbols with Decimal code'
-        },
+        }
     ]
 };
