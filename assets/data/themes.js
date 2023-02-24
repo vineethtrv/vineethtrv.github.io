@@ -53,4 +53,21 @@ export const themes = [
         second: `#267871`,
         bodybg: '#f3fffa'
     },
+    {
+        text: '#444',
+        prime: '#3c27e9',
+        second: '#799ef8',
+        bodybg: '#a8b3ff'
+    }, {
+        text: '#444',
+        prime: '#d6206c',
+        second: '#9f006f',
+        bodybg: '#ffe7ee',
+    }
+    , {
+        text: '#444',
+        prime: '#ffce03',
+        second: '#f49064',
+        bodybg: '#fcf7ed',
+    },
 ]

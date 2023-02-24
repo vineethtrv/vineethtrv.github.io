@@ -69,6 +69,43 @@ a{
     padding-right: 20px;
 }
 
+.ripple{
+    position: fixed;
+    pointer-events: none;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    color: var(--prime);
+    border: 10px solid;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    background: #0000;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0s;
+    &.show{
+        animation: rippleAnimation 0.3s ease-in-out;
+        visibility: visible;
+    }
+}
+
+@keyframes rippleAnimation {
+    0% {
+        width: 8px;
+        height: 8px;
+        border-width: 4px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 64px;
+        height: 64px;
+        border-width: 0px;
+        opacity: 0;
+    }
+}
+
 
 @import './vendors/_nav.scss';
 @import './vendors/_banner.scss';

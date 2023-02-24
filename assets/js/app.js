@@ -100,13 +100,23 @@ $(document).ready(function(){
             '--text': themes[i].text,
             '--prime': themes[i].prime,
             '--second': themes[i].second,
-            '--bodybg': themes[i].bodybg
+            '--body-bg': themes[i].bodybg
         })
     };
 
     changeTheme();
-    $(window).click(function(){
+    $(window).click(function(e){
         changeTheme();
+
+        $('.ripple').css({
+            "left": e.clientX + "px",
+            "top": e.clientY + "px",
+        }).addClass('show')
+        
+        setTimeout(function(){
+            $('.ripple').removeClass('show')
+        }, 500)
+
     })
 
 
