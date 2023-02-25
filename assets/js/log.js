@@ -5,6 +5,9 @@ const see = {
     get Follow() {
         Follow()
     },
+    get SourceCode() {
+        SourceCode()
+    },
     get No() {
         No()
     },
@@ -15,7 +18,7 @@ const see = {
 setTimeout(() => {
     console.clear();
     console.log('%c 👋 Hey are you looking for something 🧐..?  👉', "color:#03a9f4; font-size: 22px", see);
-    console.log('%c > Contact()  \n > Follow() \n > No()', "color:#1aaa4e; font-size: 22px");
+    console.log('%c > Contact()  \n > Follow() \n > SourceCode()  \n > No()', "color:#1aaa4e; font-size: 22px");
 }, 300);
 
 
@@ -125,6 +128,39 @@ const no = NO = No = () => {
 
 
     console.log("%c Cool, No worries 🤗 ", "color:orange; font-size: 20px");
+}
+
+const sourceCode = SOURCECODE = SourceCode = sourcecode = () => {
+    /**
+     
+    😕.?..Oh! You missed ()
+    💡 try:  SourceCode()
+
+
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+     * 
+    */
+
+
+
+    console.log("%cThis website created as github page. You can find source code on: %chttps://github.com/vineethtrv/vineethtrv.github.io ", "color:orange; font-size: 20px", "color:blue;");
 }
 
 
