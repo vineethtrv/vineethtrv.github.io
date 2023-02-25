@@ -49,11 +49,13 @@ body {
     color: #444;
     color: var(--text);
     user-select: none;
+    cursor: url(../images/arrow.png), default;
 }
 
 a{
     color: inherit;
     text-decoration: none;
+    cursor: url(../images/pointer.png), pointer;
     &:hover{
         text-decoration: none;
     }
